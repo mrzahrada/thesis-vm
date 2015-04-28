@@ -3,16 +3,10 @@
 %\usepackage[cp852]{inputenc} % pouľito v případě jiného kódování
 % aktuální kódování: ISO Latin 2 (ISO 8859-2)
 \usepackage{dipp}
-%\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
 
-
-
-%
-% \renewenvironment{abstract}
-% {\small\quotation
-% {\bfseries\noindent{\large\abstractname}\par\nobreak\smallskip}}
-% {\endquotation}
-
+\usepackage[]{graphics}
+\graphicspath{ {/home/zahrada/Dropbox/bachelor_thesis_VM/thesis-vm/img/} }
 
 \begin{document}
 
@@ -116,6 +110,12 @@ The purchasing function traditionally encompasses the process of buying. It invo
   One of the objectives of purchasing is ensuring the purchasing process which includes steps, which must be followed when company requires some product, material or service. The process includes step from the initial phase of identification of the problem to the payment and evaluation of the performance. The following process shown in the fig. 1 was designed by van Weele (2009):
 
 % fig 1
+
+\begin{figure}[ht!]
+  \includegraphics[width=1\textwidth]{purchase_process.jpg}
+  \caption{popis}
+\end{figure}
+
 
 As mentioned, purchasing decision making directly influence the profitability of the company. With the progress and more focus from the public, companies have to take into account not only their own interests, but also government regulations or environmental concerns. In the Fig. 1 is shown the factors which are involved in purchasing making decision.
 
@@ -489,7 +489,7 @@ Criteria indicated in the Tab. 2  are the ones which requires either both – wi
 The original new supplier evaluation table can be found in the appendix.
 Scale of evaluation: 1-4 according to below thresholds.
 >10\% deviation from category goal = 1
-Below category goal, max 10% deviation from category goal = 2
+Below category goal, max 10\% deviation from category goal = 2
 Below wished position or according to category goal = 3
 According to wished position or above = 4
 
@@ -597,14 +597,17 @@ The analysis of the evaluation system led to the following suggestions:
 
 
   \item The introducing part of the table was adjusted to the needs of the IKEA Industry as following:
-    Supplier number: number in the database.
-    Supplier name: official supplier name.
-    Supplier state (location): supplier country of origin.
-    Total notified segment current FY (€): total production in the certain category (our case: pine/spruce)
-    Related country notified segment FY (€): total production in the specific country
-    Total notified supplier current FY-1 (€): total production of the supplier in the past year.
-    Supplier share related country FY (in %): the share of production in the related country.
-    Main supplied material/component: material which supplier can provide.
+
+    \begin{itemize}
+      \item Supplier number: number in the database.
+      \item Supplier name: official supplier name.
+      \item Supplier state (location): supplier country of origin.
+      \item Total notified segment current FY (\euro): total production in the certain category (our case: pine/spruce)
+      \item Related country notified segment FY (\euro): total production in the specific country
+      \item Total notified supplier current FY-1 (\euro): total production of the supplier in the past year.
+      \item Supplier share related country FY (in \%): the share of production in the related country.
+      \item Main supplied material/component: material which supplier can provide.
+    \end{itemize}
     Supplier involvement other segments:
     In the criteria of the lowest price we had to divide the categories of different materials, suggested merged categories are shown in Tab. 5.
 
