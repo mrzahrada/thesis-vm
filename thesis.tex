@@ -7,7 +7,7 @@
 
 \usepackage[]{graphics}
 \graphicspath{ {/home/zahrada/Dropbox/bachelor_thesis_VM/thesis-vm/img/} }
-
+\linespread{1.5}
 \begin{document}
 
 \def\,{\penalty10000\hskip.25em}
@@ -19,18 +19,16 @@
 
 \titul{Vladcina BP}{Vladislava Muselikova}{--}{Brno 2015}
 
-\podekovani{Pod\v{e}kov\'{a}n\'{i}...}
 
 \prohlasenizena{V~Brně dne \today}
 
+\podekovani{Pod\v{e}kov\'{a}n\'{i}...}
 
-\abstract{Rybicka, J. The \LaTeX{} style dipp.sty for theses preparation.
-Example of Bachelor
-thesis. Brno, 2013.}{The Bachelor thesis Supplier evaluation system of the wood processing enterprise in the region of the CR, the SK, HU and AT deals with analysis of the current supplier evaluation system in IKEA Industry company in Malacky. The theoretical part is based on literature review and contains description of the purchasing process and methodology for selection and evaluation of suppliers. The practical part is devoted to the analysis of the Supplier Classification in IKEA and gives suggestions for specific improvements for the system in IKEA Industry Malacky, which deals with purchasing and processing of the raw material.}
+\abstract{The Bachelor thesis Supplier evaluation system of the wood processing enterprise in the region of the CR, the SK, HU and AT deals with analysis of the current supplier evaluation system in IKEA Industry company in Malacky. The theoretical part is based on literature review and contains description of the purchasing process and methodology for selection and evaluation of suppliers. The practical part is devoted to the analysis of the Supplier Classification in IKEA and gives suggestions for specific improvements for the system in IKEA Industry Malacky, which deals with purchasing and processing of the raw material.}{key words...}
 
-\abstrakt{ref}{abstrakt cesky}
+\newpage
 
-
+\abstrakt{Bakal\'{a}\v{r}sk\'{a} pr\'{a}ce Syst\'{e}m hodnocen\'{i} dodavatel\r{u} v regionu \v{C}R, SK, HU a AT se zab\'{y}v\'{a} anal\'{y}zou sou\v{c}asn\'{e}ho syst\'{e}mu hodnocen\'{i} v IKEA Industry v Malack\'{a}ch. Teoretick\'{a} \v{c}\'{a}st je zalo\v{z}en\'{a} na liter\'{a}rn\'{i} re\v{s}er\v{s}i a obsahuje popis n\'{a}kupn\'{i}ho procesu a metody pro hodnocen\'{i} a v\'{y}b\v{e}r dodavatel\r{u}. Praktick\'{a} \v{c}\'{a}st je zam\v{e}\v{r}ena na anal\'{y}zu Klasifikace Dodavatel\r{u} ve spole\v{c}nosti IKEA a nab\'{i}z\'{i} mo\v{z}n\'{a} specifick\'{a} \v{r}e\v{s}en\'{i} pro syst\'{e}m v z\'{a}vod\v{e} IKEA Industry v Malack\'{a}ch, kter\'{y} se zab\'{y}v\'{a} n\'{a}kupem a zpracov\'{a}n\'{i}m surov\'{e}ho materi\'{a}lu.}{klicovy pizdec}
 
 
 
@@ -44,6 +42,52 @@ In most industrial companies raw material represents the largest percentage of t
 To successfully assess possible suppliers the company must take into account many qualitative and quantitative criteria. We can take these factors and group them and get different approaches. These, in literature suggested, approaches can be difficult to handle in reality and company managers can overcome many difficulties when they find out that the specific system is not applicable and should consider that certain level of flexibility is necessary.
 
 
+
+\begin{table}
+  \begin{tabular}{c|c}
+    Supplier & Points \\ \hline
+    A        & 20     \\
+    B        & 15     \\
+    C        & 24     \\
+    D        & 14     \\
+    E        & 14     \\
+    F        & 19     \\
+    G        & 19     \\
+    H        & 18     \\
+    I        & 21     \\
+    J        & 18     \\
+    K        & -      \\
+    L        & 16     \\
+    M        & -      \\
+    N        & -      \\
+    O        & 17
+
+  \end{tabular}
+  \caption{popis}
+\end{table}
+
+
+\begin{table}
+  \parbox{.45\linewidth}{
+  \centering
+  \begin{tabular}{ccc}
+    \hline
+    a&b&c\\
+    \hline
+  \end{tabular}
+  \caption{Foo}
+  }
+  \hfill
+  \parbox{.45\linewidth}{
+  \centering
+  \begin{tabular}{ccc}
+    \hline
+    d&e&f\\
+    \hline
+  \end{tabular}
+  \caption{Bar}
+  }
+\end{table}
 
 \kapitola{Objectives}
 The main objective of this thesis is to analyze current system of supplier evaluation in enterprise Ikea Industry in Malacky and discuss eventual improvements, based on literature review and practical evaluation.\par
@@ -63,7 +107,7 @@ Practical part of the thesis deals with analyzing of the data provided by IKEA a
 The following part of the bachelor thesis deals with the description of the purchasing function in general and with the focus on the suppliers – criteria for selection, selection methods and evaluation.
 
 \sekce{Role of the purchasing management within the Supply chain management}
-To describe these two fundamental terms we have to consider the scope and focus. Some academic specialists see these as practically the same (Stuart, 1997), while some see SCM as about developing relationship with suppliers (Giunipero and Brand, 1996) and others say that good supplier management is not enough and there is an additional requirement for a wider, more integrated, all – encompassing perspective which embrace all the processes from sourcing to merchandising (Davis, 1993). Monczka et al. (2005) gives a comprehensive definition: “SCM is a strategic approach to planning for and acquiring the organization’s current and future needs through effectively managing the sup- ply base, utilizing a process orientation in conjunction with cross-functional teams to achieve the organizational mission.” \par
+To describe these two fundamental terms we have to consider the scope and focus. Some academic specialists see these as practically the same (Stuart, 1997), while some see SCM as about developing relationship with suppliers (Giunipero and Brand, 1996) and others say that good supplier management is not enough and there is an additional requirement for a wider, more integrated, all – encompassing perspective which embrace all the processes from sourcing to merchandising (Davis, 1993). Monczka et al. (2005) gives a comprehensive definition: “SCM is a strategic approach to planning for and acquiring the organization’s current and future needs through effectively managing the supply base, utilizing a process orientation in conjunction with cross-functional teams to achieve the organizational mission.” \par
 To simplify this topic and relate it to the level of bachelor thesis, the SCM term will not be used and purchasing management will be taken as superior term to supplier management, which involves the selection, evaluation and relationship with the suppliers.\par
 The purchasing function traditionally encompasses the process of buying. It involves determining of the purchasing needs, selecting the supplier, arriving at a proper price, specifying terms and conditions, issuing the contract or order, and following up to ensure proper delivery and payment. (van Weelen, 2009)
 
@@ -107,19 +151,21 @@ The purchasing function traditionally encompasses the process of buying. It invo
   \end{itemize}
 
 \end{enumerate}
-  One of the objectives of purchasing is ensuring the purchasing process which includes steps, which must be followed when company requires some product, material or service. The process includes step from the initial phase of identification of the problem to the payment and evaluation of the performance. The following process shown in the fig. 1 was designed by van Weele (2009):
+  One of the objectives of purchasing is ensuring the purchasing process which includes steps, which must be followed when company requires some product, material or service. The process includes step from the initial phase of identification of the problem to the payment and evaluation of the performance. The following process shown in the Fig. 1 was designed by van Weele (2009):
 
 % fig 1
 
 \begin{figure}[ht!]
   \includegraphics[width=1\textwidth]{purchase_process.jpg}
-  \caption{popis}
+  \caption{Purchasing process activites (van Weele, 2009)}
 \end{figure}
-
 
 As mentioned, purchasing decision making directly influence the profitability of the company. With the progress and more focus from the public, companies have to take into account not only their own interests, but also government regulations or environmental concerns. In the Fig. 1 is shown the factors which are involved in purchasing making decision.
 
-% fig 2
+\begin{figure}[ht!]
+  \includegraphics[width=1\textwidth]{complexity.jpg}
+  \caption{Impact of developments on the complexity of initial purchasing decisions (de Boer, 1998)}
+\end{figure}
 
 Current trends shows the use of decision models in purchasing implies that the mathematical nature of the models is incompatible with the highly emotion and intuition driven practice of purchasing decision-making used in the past.
 
@@ -137,10 +183,9 @@ There are further classifications and divisions of the suppliers which serve for
 
 
 \sekce{Supplier selection process}
-For the matter of supplier selection process and methodology, there are rich sources in terms of conceptual and empirical research and decision support methods for purchasing managers but none of these articles actually has studied how managers choose suppliers in practice (Verma, 1998) and there is no universal or best way to evaluate and select suppliers. For this reason the thesis deals with literature review and the practical part will include the description of actual supplier selection in Ikea Industry. Following steps shown in the fig. 2 were further discussed by Monczka et al. (2005):
+For the matter of supplier selection process and methodology, there are rich sources in terms of conceptual and empirical research and decision support methods for purchasing managers but none of these articles actually has studied how managers choose suppliers in practice (Verma, 1998) and there is no universal or best way to evaluate and select suppliers. For this reason the thesis deals with literature review and the practical part will include the description of actual supplier selection in Ikea Industry. Following steps were further discussed by Monczka et al. (2005):
 
 
-% fig 3
 \begin{description}
   \item[Step 1: Recognize the need for supplier selection] \hfill \\
   This usually means realizing that there is a requirement to evaluate and select a supplier to cover the gaps in the company progress. Responsible person is a purchasing manager who might begin the process with anticipation of a future purchase demand. The recognition of a need of evaluation and selection new suppliers can come in different ways. This may include new product development, the end of contract, poor supplier performance, extension into new markets and others.
@@ -213,7 +258,10 @@ There is a large number of existing decision making methods whom main goal is to
 The list of methods and systems used for supplier selection here, is for further comparing and contrasting with the method proposed for Ikea by McKinsey and Company. In the fig. 3 , there is a suggested division of models for the selection and evaluation.
 
 
-% fig 4
+\begin{figure}[ht!]
+  \includegraphics[width=1\textwidth]{Methods.jpg}
+  \caption{Suggested division of the methods (Mendoza, 2007)}
+\end{figure}
 
 Evaluation of suppliers is supported by ISO normalization – the ISO 9000 series help to evaluate required quality and helps managers mainly in the prime phases of the process.
 One of the main objectives of evaluation is getting feedback from the side of the supplier. The right usage of the data can help us to decide whether the supplier is worthy of the partnership, there is some change needed or the company should not continue cooperating. For this reason the companies should keep their database of suppliers updated as much as possible.
@@ -355,7 +403,13 @@ Forest Stewardship Council standards vary from country to country depending on t
 
 \podsekce{5.1.2. IKEA and suppliers}
 
-For IKEA it is very important that potential suppliers share the same ideas about business. This means long term partnership, everyday performance, constant development and making profits on high volumes rather than on high margins – reducing overhead costs, better logistics, better supplier purchase and production process and many others. IKEA also tries to bring closer the needs of customers and possibilities of suppliers with continuous evaluation of real life situations as seen in the Fig .5.1
+For IKEA it is very important that potential suppliers share the same ideas about business. This means long term partnership, everyday performance, constant development and making profits on high volumes rather than on high margins – reducing overhead costs, better logistics, better supplier purchase and production process and many others. IKEA also tries to bring closer the needs of customers and possibilities of suppliers with continuous evaluation of real life situations as seen in the Fig 4.
+
+
+\begin{figure}[ht!]
+  \includegraphics[width=0.8\textwidth]{IKEA_business_model.jpg}
+  \caption{IKEA business model}
+\end{figure}
 
 
 \podsekce{IKEA Industry}
@@ -582,6 +636,11 @@ The reason for defining how dependent IKEA is on a supplier shall be based on re
 
 For the usage in the enterprise we had to develop quite a different evaluation system. We decided to include volume dependency, price and patent.
 
+
+\begin{figure}[ht!]
+  \includegraphics[width=1\textwidth]{vykres.png}
+  \caption{IKEA dependency matrix}
+\end{figure}
 
 \sekce{Classification}
 

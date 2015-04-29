@@ -61,18 +61,20 @@
 %%%%%%%%%%%%%%%%%%%%%% Úvodní stránky
 
 \def\typprace{Diplomová}
-\def\bakalarska{\gdef\typprace{Bakalarska}}
+\def\bakalarska{\gdef\typprace{Bakal\'{a}\v{r}sk\'{a}}}
 \def\skola#1{\gdef\@skola{#1}}
 \def\fakulta#1{\gdef\@fakulta{#1}}
+\def\ustav#1{\gdef\@ustav{#1}}
 
 \def\titul#1#2#3#4{\thispagestyle{empty}
    \vspace*{-20mm}
    \begin{center}
    {\Large \sffamily \@skola\\[8pt]}
-   {\Large \sffamily \@fakulta} \par \bigskip \hrule
+   {\Large \sffamily \@fakulta\\[8pt]}
+   {\Large \sffamily \@ustav} \par \bigskip \hrule
    \vbox to 165mm{\vspace*{\fill}
    {\Huge\sffamily\bfseries #1\par}\vskip 10mm
-   {\large\sffamily\bfseries \typprace{} práce} \par
+   {\large\sffamily\bfseries \typprace{} pr\'{a}ce} \par
    \vspace*{\fill}}\par
    \noindent {\large \sffamily
         \begin{tabular}{@{}l}
@@ -83,6 +85,7 @@
 
 \skola{Mendelova univerzita v~Brně}
 \fakulta{Provozně ekonomická fakulta}
+\ustav{ustav mentalne postizenych}
 
 \def\prohlaseni#1#2{\cleardoublepage\thispagestyle{empty}\vspace*{\fill}\noindent
       \parbox{\textwidth}{\hspace*{\parindent}#1 \\[15mm]
