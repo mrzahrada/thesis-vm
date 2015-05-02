@@ -4,7 +4,7 @@
 % aktuální kódování: ISO Latin 2 (ISO 8859-2)
 \usepackage{dipp}
 \usepackage{eurosym}
-
+\usepackage{caption}
 \usepackage[]{graphics}
 \graphicspath{ {/home/zahrada/Dropbox/bachelor_thesis_VM/thesis-vm/img/} }
 \linespread{1.5}
@@ -14,19 +14,34 @@
 
 \pagestyle{headings}
 
+
+\renewcommand{\listfigurename}{List of plots}
+
+\renewcommand{\listtablename}{Tables}
+
 \pagenumbering{gobble}
 \bakalarska
 
-\titul{Vladcina BP}{Vladislava Muselikova}{Brno 2015}
+%\titul{}{Vladislava Muselikova}{Brno 2015}
+\titul{Supplier evaluation system of the wood processing enterprise in the region of the CR, SK, HU and AT}{Vladislava Musel\'{i}kov\'{a}}{2014/2015}
 
 
-\prohlasenizena{V~Brně dne \today}
+\prohlasenizena{V~Brn\v{e} dne 2.kv\v{e}tna 2015}
 
-\podekovani{\noindent \textbf{Acknowledgement}\\Firstly, I wish to express my sincere thanks to my supervisor Ing. Petra Hlaváčková, Ph.D. for valuable help, comments and encouragement. \\
-Secondly, I am also grateful to Ing. Tomáš Kisiel for providing all neccesary data and information, which helped me to complete this thesis. \\
-Thirdly, I place on recors my endless thanks to Tomáš Zahradník and Isaac Cook for their patience, guidance and advice.
+% \podekovani{\noindent \textbf{Acknowledgement}\\Firstly, I wish to express my sincere thanks to my supervisor Ing. Petra Hlaváčková, Ph.D. for valuable help, comments and encouragement. \\
+% Secondly, I am also grateful to Ing. Tomáš Kisiel for providing all neccesary data and information, which helped me to complete this thesis. \\
+% Thirdly, I place on recors my endless thanks to Tomáš Zahradník and Isaac Cook for their patience, guidance and advice.
+% Finally I take this opportunity to express my gratitude to all of the faculty members, who led me through my studies, to my family and my friends for their support.
+% }
+
+\podekovani{\noindent \textbf{Acknowledgement}\\Firstly, I wish to express my sincere thanks to my supervisor Ing. Petra Hlav\'{a}\v{c}kov\'{a},~ Ph.D. for valuable help, comments and encouragement. \\
+Secondly, I am also grateful to Ing. Tom\'{a}\v{s} Kisiel for providing all neccesary data and information, which helped me to complete this thesis. \\
+Thirdly, I place on recors my endless thanks to Tom\'{a}\v{s} Zahradn\'{i}k and Isaac Cook for their patience, guidance and advice. \\
 Finally I take this opportunity to express my gratitude to all of the faculty members, who led me through my studies, to my family and my friends for their support.
 }
+
+
+
 
 \abstract{The Bachelor thesis Supplier evaluation system of the wood processing enterprise in the region of the CR, the SK, HU and AT deals with analysis of the current supplier evaluation system in IKEA Industry company in Malacky. The theoretical part is based on literature review and contains description of the purchasing process and methodology for selection and evaluation of suppliers. The practical part is devoted to the analysis of the Supplier Classification in IKEA and gives suggestions for specific improvements for the system in IKEA Industry Malacky, which deals with purchasing and processing of the raw material.}{Key words: decision criteria, purchase, purchasing process, suppliers, supplier selection, supplier evaluation}
 
@@ -37,13 +52,15 @@ Finally I take this opportunity to express my gratitude to all of the faculty me
 
 
 \obsah
+
+
 \pagenumbering{arabic}
 \setcounter{page}{7}
 \kapitola{Introduction}
 
-A very basic part of business management is the purchasing function. Supply chain management and strategic sourcing have been one of the fastest growing area of management, particularly in last ten years. Enterprises, especially in post-soviet countries, are aware of this fact, nevertheless they still tend to put more effort into the process of selling. Howewer, some of them necislovated to realize, that with studied system of the purchase they could save more money than in a case of high sells with extra expenses when purchasing the material. Within the purchasing function one of the prime responsibilities is the selection and evaluation of suppliers. The awareness of importance of selection of suppliers is dated to early forties, when Lewis (1943) stated: “It is probable that of all the responsibilities which may be said to belong to the purchasing officers, there is none more important than the selection of a proper source. Indeed, it is in some respects the most important single factor in purchasing”. \par
+A very basic part of business management is the purchasing function. Supply chain management and strategic sourcing have been one of the fastest growing area of management, particularly in last ten years. Enterprises, especially in post-soviet countries, are aware of this fact, nevertheless they still tend to put more effort into the process of selling. Howewer, some of them necislovated to realize, that with studied system of the purchase they could save more money than in a case of high sells with extra expenses when purchasing the material. Within the purchasing function one of the prime responsibilities is the selection and evaluation of suppliers. The awareness of importance of selection of suppliers is dated to early forties, when Lewis (1943) stated: "It is probable that of all the responsibilities which may be said to belong to the purchasing officers, there is none more important than the selection of a proper source. Indeed, it is in some respects the most important single factor in purchasing." \par
 In most industrial companies raw material represents the largest percentage of the cost. For instance, in wood processing industry, it can be about 70\% of the total product cost. Therefore the selection of the right supplier is absolutely crucial.\par
-To successfully assess possible suppliers the company must take into account many qualitative and quantitative criteria. We can take these factors and group them and get different approaches. As the literature suggests, these approaches can be difficult to handle in reality and company managers can overcome many difficulties when they find out that the specific system is not applicable and should consider that a certain level of flexibility is necessary. \cite{lewis}
+To successfully assess possible suppliers the company must take into account many qualitative and quantitative criteria. We can take these factors and group them and get different approaches. As the literature suggests, these approaches can be difficult to handle in reality and company managers can overcome many difficulties when they find out that the specific system is not applicable and should consider that a certain level of flexibility is necessary.
 
 
 
@@ -65,7 +82,7 @@ The practical part of the thesis deals with analyzing of the data provided by IK
 The following part of the bachelor thesis deals with the description of the purchasing function in general and with the focus on the suppliers – criteria for selection, selection methods and evaluation.
 
 \sekce{Role of the purchasing management within the Supply chain management}
-To describe these two fundamental terms we have to consider the scope and focus. Sometimes, academic specialists see these as practically the same, while some see SCM as about developing relationship with suppliers (Giunipero and Brand, 1996) and others say that good supplier management is not enough and there is an additional requirement for a wider, more integrated, all – encompassing perspective which embrace all the processes from sourcing to merchandising (Davis, 1993). Monczka et al. (2009) gives a comprehensive definition: “SCM is a strategic approach to planning for and acquiring the organization’s current and future needs through effectively managing the supply base, utilizing a process orientation in conjunction with cross-functional teams to achieve the organizational mission.” \par
+To describe these two fundamental terms we have to consider the scope and focus. Sometimes, academic specialists see these as practically the same, while some see SCM as about developing relationship with suppliers (Giunipero and Brand, 1996) and others say that good supplier management is not enough and there is an additional requirement for a wider, more integrated, all – encompassing perspective which embrace all the processes from sourcing to merchandising (Davis, 1993). Monczka et al. (2009) gives a comprehensive definition: "SCM is a strategic approach to planning for and acquiring the organization’s current and future needs through effectively managing the supply base, utilizing a process orientation in conjunction with cross-functional teams to achieve the organizational mission."" \par
 To simplify this topic and relate it to the level of bachelor thesis, the SCM term will not be used and purchasing management will be taken as superior term to supplier management, which involves the selection, evaluation and relationship with the suppliers.\par
 The purchasing function traditionally encompasses the process of buying. It involves determining of the purchasing needs, selecting the supplier, arriving at a proper price, specifying terms and conditions, issuing the contract or order, and following up to ensure proper delivery and payment. (van Weelen, 2010) \par
 The main objectives of the purchasing management and logistics, according to Monczka (2009), are following:
@@ -110,20 +127,20 @@ The main objectives of the purchasing management and logistics, according to Mon
   \end{itemize}
 
 \end{enumerate}
-  One of the objectives of purchasing is ensuring the purchasing process which includes steps, which must be followed when company requires some product, material or service. This includes steps from the initial phase of identification of the problem to the payment and evaluation of the performance. The following process shown in the Fig. 1 was designed by van Weele (2009):
+  One of the objectives of purchasing is ensuring the purchasing process which includes steps, which must be followed when company requires some product, material or service. This includes steps from the initial phase of identification of the problem to the payment and evaluation of the performance. The following process shown in the Figure 1 was designed by van Weele (2010).
 
 % fig 1
 
 \begin{figure}[ht!]
   \includegraphics[width=1\textwidth]{purchase_process.jpg}
-  \caption{Purchasing process activites (van Weele, 2010)}
+  \caption{Purchasing process activites (van~Weele, 2010)}
 \end{figure}
 
-As mentioned, purchasing decision making directly influence the profitability of the company. With the progress and more focus from the public, companies have to take into account not only their own interests, but also government regulations or environmental concerns. In the Fig. 1 is shown the factors which are involved in purchasing making decision.
+As mentioned, purchasing decision making directly influence the profitability of the company. With the progress and more focus from the public, companies have to take into account not only their own interests, but also government regulations or environmental concerns. In the Figure 1 is shown the factors which are involved in purchasing making decision.
 
 \begin{figure}[ht!]
   \includegraphics[width=1\textwidth]{complexity.jpg}
-  \caption{Impact of developments on the complexity of initial purchasing decisions (de Boer, 1998)}
+  \caption{Impact of developments on the complexity of initial purchasing decisions (de~Boer, 1998)}
 \end{figure}
 
 Current trends shows the use of decision models in purchasing implies that the mathematical nature of the models is incompatible with the highly emotion and intuition driven practice of purchasing decision-making used in the past.
@@ -192,10 +209,12 @@ For the matter of supplier selection process and methodology, there are rich sou
 
 \sekce{Decision criteria}
 Decision criteria are the set of requirements which must be completed by the supplier part and the list of criteria is used for assessment. The criteria might be assigned different weight according the type of selection system. \par
-Though a little bit outdated, bit still widely informative work can be cited by Dickson (Dickson, 1966). He sent 273 questionnaires to managers of leading companies in the USA and Canada and asked to mark criteria which are the most seminal in the decision-making process. In his book he stated, that it is quite easy to abstract alist of 50 distinct criteria, whilst for his study he chose 23 which were constantly repeating in the surveys. These factors are shown in the Table 1. below, in order of importance. We have to consider the fact, that this list was revealed in the sixties and the table would slightly differ with diverse products. For this reason the Tab 1. Also includes the order suggested by Weber (1991) The most significant difference is spot in geographical location as nowadays the logistics method of stocking just-in-time (JIT) is very popular and suppliers are required to deliver on time. There are another factors, as environmental issues, which are not included as the significance in 1966 was not high.
+Though a little bit outdated, bit still widely informative work can be cited by Dickson (1966). He sent 273 questionnaires to managers of leading companies in the USA and Canada and asked to mark criteria which are the most seminal in the decision-making process. In his book he stated, that it is quite easy to abstract alist of 50 distinct criteria, whilst for his study he chose 23 which were constantly repeating in the surveys. These factors are shown in the Table 1. below, in order of importance. We have to consider the fact, that this list was revealed in the sixties and the table would slightly differ with diverse products. For this reason the Table 1. Also includes the order suggested by Weber (1991) The most significant difference is spot in geographical location as nowadays the logistics method of stocking just-in-time (JIT) is very popular and suppliers are required to deliver on time. There are another factors, as environmental issues, which are not included as the significance in 1966 was not high.
 
 
 \begin{table}[h]
+  \centering
+  \caption{Dickson's (1966) supplier or vendor selection criteria compared with situation by Weber et al. (2001)}
   \scalebox{0.6}{
   \begin{tabular}{lll}
     \multicolumn{2}{c}{Rank} & \\ \cline{1-2}
@@ -225,10 +244,9 @@ Though a little bit outdated, bit still widely informative work can be cited by 
     \multicolumn{1}{l|}{23}      & \multicolumn{1}{l|}{19}           & Reciprocal Arrangements
   \end{tabular}
   }
-  \caption{fooo}
 \end{table}
 
-Later, Lehman and O’Shaugnessy (1982) suggested in their study to form groups of factors: performance criteria, economic criteria, integrative criteria and adaptive criteria - the extent to which buying firm may have to adapt its plans to accommodate uncertainty about the capability of the supplier (Vokurka et al., 1996) The literature related to the problem of criteria in the supplier selection problem is very rich. As another example of how we can look at criteria was distinguished by Barbarosoglu and Yazgac (1997) and the work suggests to form groups of three principle criteria:
+Later, Lehman and O’Shaugnessy (1982) suggested in their study to form groups of factors: performance criteria, economic criteria, integrative criteria and adaptive criteria - the extent to which buying firm may have to adapt its plans to accommodate uncertainty about the capability of the supplier (Vokurka et al. 1996) The literature related to the problem of criteria in the supplier selection problem is very rich. As another example of how we can look at criteria was distinguished by Barbarosoglu and Yazgac (1997) and the work suggests to form groups of three principle criteria:
 
   \begin{itemize}
     \item The performance of the supplier
@@ -243,7 +261,7 @@ After identifying factors which are important for specific commodity, the compan
 
 \sekce{Suppliers selection and evaluation methods}
 
-The supplier selection was supposed to be a matter of straightforward process, but later the approach had to changed due to difficulties such as (1) growing number of potential suppliers; (2) growing number of attributes; (3) increasing number of situational contexts that affect appropriateness of specific supplier attributes; and (4) difficulty in identifying and defining supplier selection parameters (Altinoz et al., 2010). \par
+The supplier selection was supposed to be a matter of straightforward process, but later the approach had to changed due to difficulties such as (1) growing number of potential suppliers; (2) growing number of attributes; (3) increasing number of situational contexts that affect appropriateness of specific supplier attributes; and (4) difficulty in identifying and defining supplier selection parameters (Altinoz et al. 2010). \par
 There is a large number of existing decision making methods whom main goal is to assist in supplier selection. Both, qualitative and quantitative factors are involved. As previously mentioned the contemporary supply management is to maintain long term partnership with suppliers and rely on fewer of them. This thesis differ terms system and method. The system stands for the approach and the method describes models which are suitably used for the certain system. Therefore there are three systems: categorical system, weight point system and cost based system. \par
 The list of methods and systems used for supplier selection here, is for further comparing and contrasting with the method proposed for Ikea by McKinsey and Company. The figure shows suggested division of methods.
 
@@ -261,7 +279,7 @@ One of the main objectives of evaluation is getting feedback from the side of th
 \podsekce{Selection of supplier based on quality assessment – ISO 9000}
 Evaluation of suppliers is supported by ISO normalization – the ISO 9000 series help to evaluate required quality and helps managers mainly in the prime phases of the process. These standards were designed for companies which want to prove that are capable of consistent production and supply.
 
-Main objectives of the system of quality are (Menšíková, 2009):
+Main objectives of the system of quality are (Men\v{s}\'{i}kov\'{a}, 2009):
   \begin{itemize}
     \item Strict requirements of the purchase should be set
     \item Convenient choice of the supplier
@@ -274,7 +292,7 @@ Main objectives of the system of quality are (Menšíková, 2009):
 The main objectives of prequalification are to effectively eliminate completely or partly inconvenient suppliers and it is rather the process of sorting than ranking. (de Boer et al. 2001) The pre-selection methods helps to make further investigation more comprehensive. Some systems use these methods for final decisions which can lead to ineffectiveness, on the other hand the usage of these methods for final selection is easy and very quick.
 
 \podsekce{Preliminary evaluation}
-Nenadál (2006) suggests making primer selection based on analysis of the first samples, assessment of the company management and references of other customers.
+Nenad\'{a}l (2006) suggests making primer selection based on analysis of the first samples, assessment of the company management and references of other customers.
 \begin{itemize}
   \item Analysis of the first samples means that the company takes the provided samples and compare them with their own requirements. The company must take into account the fact that samples might be produced in completely different environment than standard high volume production. This approach is limited to raw material, stock products, and final products. Otherwise the method of the assessment of the company management must be applied.
   \item Assessment of the company management is a process when supplier receives a survey with a focus on prior criteria and is further examined. In case of the Ikea Company, the supplier could expect questions concerning environmental issues, net price or development and modernization.
@@ -284,7 +302,7 @@ Nenadál (2006) suggests making primer selection based on analysis of the first 
 
 
 \podsekce{Pre-qualification methods of supplier selection}
-Among the pre-qualification methods, there are: categorical methods, data envelopment analysis and cluster analysis. (Pal et al., 2007) \par
+Among the pre-qualification methods, there are: categorical methods, data envelopment analysis and cluster analysis. (Pal et al. 2007) \par
 \emph{Categorical system} is a qualitative model which evaluate historical data and company’s experience with the supplier. First the supplier’s performance is classified as negative, neutral or positive and secondly, based on average rating the supplier receive overall evaluation: negative, neutral or positive. Czech literature (Ochrana, 2004) suggests to divide methods into categories of methods of simple evaluation and methods of weighted evaluation. In this case it is appropriate to involve methods of simple evaluation in categorical system. There are three scales:
 \begin{itemize}
 \item Nominal scale – the simplest method, which does not carry much information and have two values 0/1, yes/no or convenient/inconvenient. The disadvantage of this method is, that preferences of each criteria cannot be displayed
@@ -292,29 +310,29 @@ Among the pre-qualification methods, there are: categorical methods, data envelo
 \item Cardinal scale – expresses how many times or how much is evaluation of one bid higher than the one of the other is. In practice this means that all data has the same denominator and are expressed by percentage. The best supplier stands for 100\% and the rest scores proportionately.
 \end{itemize}
 
-\emph{Data envelopment analysis (DEA)} is a method which put suppliers into two categories, ‘efficient’ and ‘inefficient’ according to the performance of the inputs and outputs. It is a linear programming method which allows to measure multiple criteria at once. The method also gives results which can help to improve partnerships with ‘inefficient’ supplier. The DEA was evaluated as the most popular approach for supplier evaluation. (Weber et al.,1991) \par
+\emph{Data envelopment analysis (DEA)} is a method which put suppliers into two categories, ‘efficient’ and ‘inefficient’ according to the performance of the inputs and outputs. It is a linear programming method which allows to measure multiple criteria at once. The method also gives results which can help to improve partnerships with ‘inefficient’ supplier. The DEA was evaluated as the most popular approach for supplier evaluation. (Weber et al. 1991) \par
 
 \emph{Cluster Analysis (CA)} is a basic method from statistics which uses a classification algorithm to group a number of items which are described by a set of numerical attribute scores into a number of clusters such that the differences between items within a cluster are minimal and the differences between items from different clusters are maximal. This classification is used to reduce a larger set of suppliers into smaller more manageable subsets. Cluster analysis was in details described by Timmerman (2004).
 
 
 
 \podsekce{Selected systems and models for the final selection of the suppliers}
-Most of the designed systems and methods are proposed for the final selection. Also, most of them are multi-criteria decision making approaches (MCDA). The thesis will further discussed the weighted point system which mostly includes the linear weighting models and cost based system - detailing the total cost of ownership method (TCO) in details. To mention more complex approaches, which are not widely used due to their complicated structure, there are statistical models, mathematical programming models and artificial intelligence models. These models are usually used in larger companies where a cost based system is implemented.\par
-\emph{Statistical models} capture the uncertainty related to the supplier selection problem, for example, uncertain demand. As an approach to capture uncertainty, Ding et al. (Ding et al., 2005) proposed a simulation optimization methodology for supplier selection. The methodology consists of three parts: (1) a genetic algorithm (GA) optimizer that continuously searches for new supplier portfolios; (2) using the output from the GA optimizer, a discrete-event simulation model is run to evaluate suppliers on pre-selected key performance indicators (KPI’s); (3) after simulation runs, a fitness value is calculated based on the KPI’s. The fitness is returned to the GA optimizer to search for the next supplier portfolio. Genetic algorithm is a kind of algorithm, which takes inputs which are supposed to be optimized and generate the score, which should be ideal for certain usage. (Mendoza, 2007)\par
+Most of the designed systems and methods are proposed for the final selection. Also, most of them are multi-criteria decision making approaches (MCDA). The thesis will further discussed the weighted point system which mostly includes the linear weighting models and cost based system - detailing the total cost of ownership method (TCO). To mention more complex approaches, which are not widely used due to their complicated structure, there are statistical models, mathematical programming models and artificial intelligence models. These models are usually used in larger companies where a cost based system is implemented.\par
+\emph{Statistical models} capture the uncertainty related to the supplier selection problem, for example, uncertain demand. As an approach to capture uncertainty, Ding et al. (2005) proposed a simulation optimization methodology for supplier selection. The methodology consists of three parts: (1) a genetic algorithm (GA) optimizer that continuously searches for new supplier portfolios; (2) using the output from the GA optimizer, a discrete-event simulation model is run to evaluate suppliers on pre-selected key performance indicators (KPI’s); (3) after simulation runs, a fitness value is calculated based on the KPI’s. The fitness is returned to the GA optimizer to search for the next supplier portfolio. Genetic algorithm is a kind of algorithm, which takes inputs which are supposed to be optimized and generate the score, which should be ideal for certain usage. (Mendoza, 2007)\par
 \emph{Mathematical programming models} are very suitable for the supplier selection problem as these models can optimize results using either single or multi objective models. To highlight one example, there is a goal programming model (GPM), which includes decision-maker that is able to process data with set target levels, the goals on different criteria. \par
 \emph{Artificial intelligence models} are models which are able to work with experience and historical data, therefore they can pretend human behavior and decisions. Models are very good at coping with unpredictability and uncertainty which is very often included in the process of supplier selection and at the same time they lack the subjectivity which arises with the human factor.
 
 
 \podsekce{Weighted point system and linear weighting models}
 
-The system of weighted points is closer to objectivity then the categorical system. Weighted point system places a numerical weight on each criteria and multiplies them with these weights. Several issues regarding the system must be understood: the company management must carefully select the most important criteria and decide the weights put on each performance (Monczka et al., 2009). The preferred models for weighted point system are e.g.: Analytical Hierarchical Process (AHP), Technique for the Order Performance by Similarity to Ideal Solution (TOPSIS) or Multiple Attribute Utility Theory (MAUT) \par
+The system of weighted points is closer to objectivity then the categorical system. Weighted point system places a numerical weight on each criteria and multiplies them with these weights. Several issues regarding the system must be understood: the company management must carefully select the most important criteria and decide the weights put on each performance (Monczka et al. 2009). The preferred models for weighted point system are e.g.: Analytical Hierarchical Process (AHP), Technique for the Order Performance by Similarity to Ideal Solution (TOPSIS) or Multiple Attribute Utility Theory (MAUT) \par
 \emph{AHP} was designed by Saaty (1980) and since then was implemented in many different fields such as planning and selecting. The model is based on three principles: structure of the hierarchy, comparative (usually pairwise) judgment of the alternatives and synthesis of the priorities. The hierarchical system has at least three levels. After the decision criteria are put in structure, the pairwise judgment can start from the second level, going to the lowest level. In each level the criteria are compared pairwise according to their levels of influence and based on the specified criteria in the higher level. The judgement are based on the question: ‘How important is criterion A relative to criterion B?‘ In AHP, comparisons are based on nine levels, when 1 means that the criteria are the same important. \par
 \emph{TOPSIS} is a technique based on the concept of distances. Optimal solution, alternative should have the farthest distance from the negative ideal solution and shortest distance from the positive ideal solution. The method includes identifying of the closeness coefficient which determines the ranking order of all suppliers and defining the linguistic values which assess the weights of each criterion. \par
 \emph{MAUT} is a method which mainly differ from AHP and TOPSIS method that can evaluate what-if scenarios. MAUT enables the decision maker to structure a complex problem in the form of a simple hierarchy and to subjectively evaluate a large number of quantitative and qualitative factors in the presence of risk and uncertainty MAUT also handles multiple conflicting factors. The application of the MAUT method involves following steps (Min, 1994):
 
 \begin{enumerate}
-  \item Identification of the “performance matrix” and scope of the problems with the goals.
-  \item Defining the criteria and putting them into a “value tree”
+  \item Identification of the "performance matrix" and scope of the problems with the goals.
+  \item Defining the criteria and putting them into a "value tree"
   \item Calculation of the relative importance of the criteria
   \item Establishing a relationship between the criteria and the utility scores (attractiveness), putting a utility score on each criterion.
   \item Computing the overall utility score for each decision alternative and rank alternatives in terms of aggregate utility scores.
@@ -338,7 +356,7 @@ This approach necessitates identifying of costs beyond the purchase, which usual
 \end{itemize}
 
 
-Introduction of the TCO model can be in many cases a very difficult task which requires input from different departments within the company. The company management must be assured that all costs were captured correctly through the entire life cycle. Also the accounting systems are not designed to include nonperformance costs (Monczka et al., 2007) The wood industry is a convenient business for implementing TCO model as the costs connected to the process of wood can be extremely high.
+Introduction of the TCO model can be in many cases a very difficult task which requires input from different departments within the company. The company management must be assured that all costs were captured correctly through the entire life cycle. Also the accounting systems are not designed to include nonperformance costs (Monczka et al. 2009) The wood industry is a convenient business for implementing TCO model as the costs connected to the process of wood can be extremely high.
 
 
 
@@ -351,7 +369,7 @@ All numbers included are real but the names of suppliers are replaced with the l
 \sekce{Company and enterprise introduction}
 The main concept of IKEA is to offer good quality for reasonable prices and to a wide range people. Behind good quality there are features such as good function, design and value, everything achived with respect to the sustainability. The IKEA was founded by Ingvar Kamprad in 1947 and the company names is an acronym: I and K are initials of the founder and E and A are the first letters from the names of the farm and village where he grew up - Elmtaryd and Agunnaryd. \par
 The IKEA stores work under the franchise agreement and the stores are located worldwide with the main quarters in the Netherlands with total sales in 2014 of 28.7 billion of euros. \par
-IKEA’s main vision is: “To create a better everyday life for the many people” and “to offer a wide range of well-designed, functional home furnishing products at prices so low that as many people as possible will be able to afford them” is the business idea and IKEA tries to fulfill this through constant optimizing the value chain, good partnership with suppliers, investing in highly automated production and producing large volumes. For more information about IKEA, its history and visions see www.ikea.com.
+IKEA’s main vision is: "To create a better everyday life for the many people" and "to offer a wide range of well-designed, functional home furnishing products at prices so low that as many people as possible will be able to afford them" is the business idea and IKEA tries to fulfill this through constant optimizing the value chain, good partnership with suppliers, investing in highly automated production and producing large volumes. For more information about IKEA, its history and visions see www.ikea.com.
 
 
 \podsekce{IWAY Directives}
@@ -401,7 +419,7 @@ For IKEA it is very important that potential suppliers share the same ideas abou
 
 \begin{figure}[ht!]
   \includegraphics[width=0.8\textwidth]{IKEA_business_model.jpg}
-  \caption{IKEA business model}
+  \caption{IKEA business model (IKEA, 2015)}
 \end{figure}
 
 
@@ -418,7 +436,7 @@ The role of IKEA Industry is to:
 
 
 \sekce{Analysis of the past evaluation system}
-The last system of evaluation of suppliers was designed by the former SWEDSPAN Company, currently IKEA Industry. The system was inconvenient for several reasons, but the most importantly the level of objectivity was very low. Processes, inputs and outputs are described in the flowchart in the appendix.
+The last system of evaluation of suppliers was designed by the former SWEDSPAN Company, currently IKEA Industry. The system was inconvenient for several reasons, but the most importantly the level of objectivity was very low.
 
 Operations involved:
 
@@ -479,7 +497,7 @@ The method describes step by step how to manage supplier evaluation. All the dat
   Collect the agreed goals and wished position (where applicable) for the supplier classification criteria. If relevant, define the category specific criteria (1 or 2) including defining the thresholds for scoring (from 1 to 4).\par
   A category specific criteria can only be added if it is crucial for performance in the specific category. \apr
   Wished position is the lowest possible position in criteria of lowest price and product quality. Category goal the position which should be actually achieved or slightly exceeded by the best suppliers.\par
-  Open Supplier Classification Tool and insert the goals and wished position for the defined criteria and load; suppliers, notified volumes for previous year and track record of performance. Make sure all suppliers within the category have been loaded, if not, insert the missed out supplier´s and their data manually. In our case all data will be inserted manually
+  Open Supplier Classification Tool and insert the goals and wished position for the defined criteria and load; suppliers, notified volumes for previous year and track record of performance. Make sure all suppliers within the category have been loaded, if not, insert the missed out supplier's and their data manually. In our case all data will be inserted manually
 
   \item[Step 3: Score and Classify Suppliers] \hfill \\
   Review the loaded performance data on all suppliers. If there has been any external factors impacting the performance of the supplier(s) (e.g. radical increase in raw material prices affecting the price development) the performance can be manually adjusted to compensate for such events. Any manual correction need to be documented in the supplier classification tool with a reason. \par
@@ -492,9 +510,8 @@ The method describes step by step how to manage supplier evaluation. All the dat
     \item Evaluate how dependent IKEA is on the Supplier.
   \end{itemize}
 
-  Once all performance data is complete and the evaluations mentioned in 3.2 are performed and result inserted in the supplier classification tool on all suppliers, a proposed classification can be calculated by clicking the button “calculate proposed classification”. \par
-  Supplier with track record only for 1 or 2 years, the average of the performance will be calculated based on the track record over time that is available. If track record is less than 3 years it is not possible to become IKEA Prioritized supplier. \par
-  Evaluation tables can be found in the appendix.
+  Once all performance data is complete and the evaluations mentioned in 3.2 are performed and result inserted in the supplier classification tool on all suppliers, a proposed classification can be calculated by clicking the button "calculate proposed classification". \par
+  Supplier with track record only for 1 or 2 years, the average of the performance will be calculated based on the track record over time that is available. If track record is less than 3 years it is not possible to become IKEA Prioritized supplier.
 
   \item[Step 4: Create total picture through] \hfill \\
   \begin{itemize}
@@ -504,7 +521,7 @@ The method describes step by step how to manage supplier evaluation. All the dat
 
   \item[Step 5: Summarize Supplier Classification through] \hfill \\
   \begin{itemize}
-    \item Dialogue to conclude on classification for suppliers in several categories/entities. Guidelines for “hierarchy” of classification is:
+    \item Dialogue to conclude on classification for suppliers in several categories/entities. Guidelines for "hierarchy" of classification is:
       \begin{itemize}
       \item IKEA Critical Supplier
       \item IKEA Prioritized Supplier
@@ -533,31 +550,33 @@ The method describes step by step how to manage supplier evaluation. All the dat
 
 \sekce{Analysis of individual criteria from the current evaluation system}
 
-Criteria indicated in the Tab. 2  are the ones which requires either both – wished position and category goal or just category goal
+Criteria indicated in the Table 2  are the ones which requires either both – wished position and category goal or just category goal
 
 % tab 2
 \begin{table}[h]
-
-  \begin{tabular}{lllll}
-    Criteria                               & Wished Position &  &  & Goal \\
-    Lowest price (Current PuA)             &                 &  &  &      \\
-    Price development (PuA)                &                 &  &  &      \\
-    Product Quality (COPQ)                 &                 &  &  &      \\
-    Quality development (COPQ)             &                 &  &  &      \\
-    Availability – On time delivery sender &                 &  &  &      \\
-    &                 &  &  &      \\
-    Supplier Sustainability Index          &                 &  &  &      \\
-    Category specific 1*                   &                 &  &  &      \\
-    Category specific 2*                   &                 &  &  &
+  \caption{Criteria and their category goals and wished positions (IKEA directives)}\\
+  \smallskip
+  \begin{tabular}{l|c|c}
+    Criteria                               & Wished Position                                            & Goal                                                      \\ \hline
+    Lowest price (Current PuA) (EURO)      & \begin{tabular}[c]{@{}c@{}}95, 00 \\ (Spruce)\end{tabular} & \begin{tabular}[c]{@{}c@{}}100,80\\ (Spruce)\end{tabular} \\
+    Price development (PuA) (\%)           & 96, 97                                                     & 97, 00                                                    \\
+    Product Quality (COPQ) (\%)            & -                                                          & 100                                                       \\
+    Quality development (COPQ)             & -                                                          & 100                                                       \\
+    Availability – On time delivery sender & -                                                          & 100                                                       \\
+    Sustainability                         & -                                                          & -                                                         \\
+    MSS (\%)                               & -                                                           & 10
   \end{tabular}
 \end{table}
 
-The original new supplier evaluation table can be found in the appendix.
 Scale of evaluation: 1-4 according to below thresholds.
->10\% deviation from category goal = 1
-Below category goal, max 10\% deviation from category goal = 2
-Below wished position or according to category goal = 3
-According to wished position or above = 4
+
+\vspace{10mm}
+
+\noindent $>$ 10\% deviation from category goal = 1 \\
+Below category goal, max 10\% deviation from category goal = 2 \\
+Below wished position or according to category goal = 3 \\
+According to wished position or above = 4 \\
+
 
 If the scale differs, it will be written in the specific criteria description.
 
@@ -572,15 +591,18 @@ Strategic fit shows overall understanding of the supplier. To avoid subjectivity
 \end{itemize}
 
 Specification for each topic can be found in appendix. \par
-Weight: 6,25\%
+\vspace{2mm}
+\noindent Weight: 6,25\%
 
 
 
 \podsekce{Lowest Price (Current PuA)}
 Description: Price benchmark between existing suppliers towards wished position and goal within the category/segment. Lowest price (PUA) can be considered on a regional basis if relevant (e.g., in cases of high transportation cost).
-\\
-$ Weight: 25\% $
-\\
+
+\vspace{2mm}
+\noindent Weight: 25\%
+\vspace{2mm}
+
 To complete this step of evaluation there we needed to set material categories, because IKEA Industry in Malacky processes more than one kind of material. \par
 Next, the prices differ with every supplier. For this reason there are two main ways which are included in the suggested model. Free Carrier (FCA) price is a price excluding the transport, whlst Delivered at Place (DAP) price which includes the transport costs. \par
 The data was transferred to the evaluation table as follows:
@@ -597,25 +619,40 @@ Price development was also suggested to be the most important criteria from all 
 
 \podsekce{Price development (PuA)}
 Description: Average ongoing price development compared to average category goal over the past 3 full years. \par
-Weight: 25\% \par
+
+\vspace{2mm}
+\noindent Weight: 25\%
+\vspace{2mm}
+
 The criteria description was further discussed and the final decision was to evaluate the price development based on the track of the difference between ongoing price and price of the commodity index
 
 \podsekce{Product quality (COPQ)}
 
-Description: Benchmark between existing suppliers towards wished position and goal within the category/segment on COPQ.\par
-Weight: 6,25\% \par
+Description: Benchmark between existing suppliers towards wished position and goal within the category/segment on COPQ.
+
+\vspace{2mm}
+\noindent Weight: 6,25\%
+\vspace{2mm}
+
 The criteria was specified as the ratio between the whole volume and the volume with costs connected to the poor product quality. The problem should be further discussed as sometimes the volume does not say much about the actual problem, so the price should be included as well.
 
 
 \podsekce{Availability – On time delivery sender}
 Description: Dispatch precision is based on Notified on time by the supplier versus Ordered value per supplier and week. An average of the last 52 weeks shall be base for the evaluation. \par
-Weight: 6,25\% \par
+
+\vspace{2mm}
+\noindent Weight: 6,25\%
+\vspace{2mm} \par
+
 For the purpose of the usage in IKEA was suggested to use data of fulfillment according the contract, which divides year into the quarters.
 
 \podsekce{Sustainability index}
 We did not include the index in the evaluation system. The criteria MSS (Main sustainable sources), which shows percentage of using certified forests, and Sustainability, showing the overall supplier approach to the energy, water and waste management, were added instead. \par
-Weight (MSS): 12,5\% \par
-Weight (Sustainability): 18,75\% \par
+
+\vspace{2mm}
+\noindent Weight (MSS): 12,5\% \\
+Weight (Sustainability): 18,75\%
+\vspace{2mm}\par
 
 \podsekce{IWAY Approved}
 If the supplier is not classified as approved, the company should be automatically classified as the critical supplier. For the purpose of IKEA Industry in Malacky, there has been a suggestion to narrow this down to the IKEA must, the first chapter in the IWAY directives.
@@ -652,17 +689,21 @@ For the usage in the enterprise we had to develop quite a different evaluation s
 
 \begin{figure}[ht!]
   \includegraphics[width=1\textwidth]{vykres.png}
-  \caption{IKEA dependency matrix}
+  \caption{IKEA dependency matrix (IKEA, 2015)}
 \end{figure}
 
 \sekce{Classification}
 
-According to the results, suppliers are classified as indicated in Tab. 3.
+According to the results, suppliers are classified as indicated in Table 3.
 
 % tab 3
 
 \begin{table}[h]
-  \tiny
+  \centering
+  \caption{IKEA Clasification of the suppliers (IKEA directives)}
+  \vspace{10mm}
+  \scalebox{0.7}{
+
   \begin{tabular}{|l|l|}
     \hline
     \textbf{Classification}                                                                        & \textbf{￼￼Scoring condition}                                                                                                                                                                                                                      \\ \hline
@@ -672,6 +713,7 @@ According to the results, suppliers are classified as indicated in Tab. 3.
           ￼￼IKEA Supplier (S)                                                                            & \begin{tabular}[c]{@{}l@{}}IWAY approved is Yes. Suppliers that does not fulfill the \\ criteria for any other Supplier classification and total \\ business with IKEA \textless 20 MEUR and \textless 10 \% \\ of the category\end{tabular}      \\ \hline
           \begin{tabular}[c]{@{}l@{}}IKEA Critical \\ Supplier (C)\end{tabular}                          & \begin{tabular}[c]{@{}l@{}}One or more of following criteria; IWAY approved \\ No or Performance score is low, combined with high \\ IKEA dependency scoring ≥3.\end{tabular}                                                                     \\ \hline
           \end{tabular}
+          }
         \end{table}
 
 
@@ -680,15 +722,18 @@ The analysis of the evaluation system led to the following suggestions:
 
 
 \begin{itemize}
-  \item Considering the weight distribution. The weights were distributed based on the personal feeling which means that the level of subjectivity is very high. Distributing weights according the AHP model (described in the literature review) is shown in the Tab. 4 and Tab. 5. This is only suggestion for further review.
+  \item Considering the weight distribution. The weights were distributed based on the personal feeling which means that the level of subjectivity is very high. Distributing weights according the AHP model (described in the literature review) is shown in the Table 4. This is only suggestion for further review.
 
 
   % ditable
 
   \begin{table}
+
+    \caption{AHP weight distribution (Own sourcing)}
     \scalebox{0.7}{
-    \parbox{.50\linewidth}{
+    \parbox{.60\linewidth}{
     \centering
+
     \begin{tabular}{l|l|l|l}
       \multicolumn{2}{l|}{Category} & Priotity & Rank \\ \hline
       1     & Lowest Price          & 28.5\%   & 1    \\
@@ -698,10 +743,9 @@ The analysis of the evaluation system led to the following suggestions:
       5     & MSS                   & 11.8\%   & 4    \\
       6     & Sustainabilty         & 20.4\%   & 3
     \end{tabular}
-    \caption{Foo}
     }
     \hfill
-    \parbox{.80\linewidth}{
+    \parbox{1\linewidth}{
     \centering
     \begin{tabular}{l|cccccc}
       & 1                         & 2                         & 3                         & 4                         & 5                         & 6                      \\ \hline
@@ -712,7 +756,7 @@ The analysis of the evaluation system led to the following suggestions:
       5 & 0.33                      & 0.33                      & 3.00                      & \multicolumn{1}{c|}{3.00} & \multicolumn{1}{c|}{1}    & 0.50                   \\ \cline{6-7}
       6 & 0.50                      & 0.50                      & 5.00                      & 5.00                      & \multicolumn{1}{c|}{2.00} & \multicolumn{1}{c|}{1} \\ \cline{7-7}
     \end{tabular}
-    \caption{Bar}
+
     }
     }
   \end{table}
@@ -736,7 +780,10 @@ The analysis of the evaluation system led to the following suggestions:
 
 
     \begin{table}[h]
-      \tiny
+      \centering
+      \caption{Material categories (Own sourcing)}
+
+      \scalebox{0.7}{
       \begin{tabular}{l|l}
         Marking    & Material                     \\ \hline
         H011       & Spruce                       \\
@@ -756,6 +803,8 @@ The analysis of the evaluation system led to the following suggestions:
         X01        & Fuel chips                   \\
         X02        & Fuel chips
       \end{tabular}
+
+      }
     \end{table}
 
 
@@ -771,11 +820,14 @@ The analysis of the evaluation system led to the following suggestions:
 
 \sekce{Comparing and contrasting of the past and new evaluation system}
 
-After the analyzing the system and changing the evaluation system to the needs of IKEA Industry in Malacky, we tried the new system with 15 suppliers from different countries in the region, private and state, small and bigger. In the Tab. 7 we can see results according the past evaluation system and in the Tab. 8 according the new one. Complete tables can be found in the appendix. \par
+After the analyzing the system and changing the evaluation system to the needs of IKEA Industry in Malacky, we tried the new system with 15 suppliers from different countries in the region, private and state, small and bigger. In the Table 6 we can see results comparing the past evaluation system and the new one. Complete tables can be found in the appendix. \par
 
 % tabs
 \begin{table}[h]
-  \tiny
+  \caption{Comparison of the old and new results of supplier's evaluation (Own sourcing)}
+  \centering
+  \scalebox{0.7}{
+
   \begin{tabular}{c|c|ccc}
     & OLD    & \multicolumn{3}{c}{NEW}                                                                                                                                  \\ \hline
     Supplier & Points & Performance & \begin{tabular}[c]{@{}c@{}}IKEA \\ Dependency\end{tabular} & Approved Classification                                                        \\ \hline
@@ -795,7 +847,7 @@ After the analyzing the system and changing the evaluation system to the needs o
     N        & -      & 2           & 2                                                          & IKEA Supplier                                                                  \\
     O        & 17     & 2           & 2                                                          & IKEA Supplier
   \end{tabular}
-  \caption{popisek}
+  }
 \end{table}
 
 \newline
@@ -807,113 +859,145 @@ Suppliers D - N have average score in both evaluation system. This means that ex
 
 
 \sekce{Application of elements from other methods}
-IKEA evaluation system is based on linear weighted model. Some evaluation models contains elements, which could be helpful in addition to the current evaluation system. \par
-TCO model does not show benefit costs, but can effectively show hidden costs. Among hidden costs in our case, we can find cost of maintenance, processing costs, environmental costs, acquisition costs - costs connected with the selection, ordering process or identifying the problems and costs connected with administration. The TCO model also helps to spotlight the costs before they become problems as so called  “change costs”, costs connected with change of suppliers, lost of suppliers, adding capacity or system uprģrading. \par
-DEA method could help us to further analyze relationship between inputs and outputs. In practise this means difference in costs between supplied material and the final product. For further studies about DEA method see Quantitative Models for Performance Evaluation and Benchmarking: For further studies about DEA method see Zhu (2014)
+IKEA evaluation system is based on the linear weighted model. Some evaluation models contain elements, which could be helpful in addition to the current evaluation system. \par
+TCO model does not show benefits costs, but can effectively show hidden costs. Among hidden costs in our case, we can find cost of maintenance, processing costs, environmental costs, acquisition costs - costs connected with the selection, ordering process or identifying the problems and costs connected with administration. The TCO model also helps to spotlight the costs before they become problems as so-called  "change costs", costs connected with the change of suppliers, loss of suppliers, adding capacity or system upgrading. \par
+DEA method could help us to analyze the relationship between inputs and outputs. In practice, this means difference in costs between supplied material and the final product. For further studies about DEA method sees Quantitative Models for Performance Evaluation and Benchmarking: Data Envelopment Analysis with Spreadsheets (Zhu, 2014).
 
 
 
 \kapitola{Discussion}
-
-Over few last years corporations like IKEA were facing the pressure from the stakeholders, public and government to incorporate more responsible approach to the environmental issues. This main reason among other reasons led to the need of creating the new system of supplier selection and evaluation. \par
-The current evaluation system in the IKEA Industry Malacky is an example of linear weighted model, where different criteria have different weight. The system was designed specifically for the company with the consultation of McKinsey & Company. \par
-The analysis of the system of the system discovered few imperfections. Some criteria could not be used in the system and some had to be added. Also the criteria had to be reassessed. After analyzing the new evaluation system and adjusting the system to the need of IKEA Industry in Malacky we tried the system on 15 suppliers, we included the private and state suppliers and suppliers from different countries.  \par
-Results showed that wood-processing industry is not fully ready to fulfill the requirements for the sustainability, at least in the region of central Europe. For most of the suppliers are quantity and competitive prices the most significant factors. From the comparing of  two approaches we can say that the fact that by the year 2020 IKEA wants to have all suppliers classified as IWAY approved, moved most of the suppliers to worse positions.  \par
-The classification is currently designed to be very easy to follow and to be convenient for as many divisions as possible. The fact that the output of the evaluation system is classification in 5 categories does not seem sufficient. The evaluation could also include some of the most important data such as overall performance (not in rounded-off form), dependency or supplied volume to give more comprehensive idea about the supplier. \par
+Over few last years, corporations like IKEA were facing the pressure from the stakeholders, public and government to incorporate a more responsible approach to the environmental issues. This main reason among other reasons led to the need of creating the new system of supplier selection and evaluation. \par
+The current evaluation system in the IKEA Industry Malacky is an example of the linear weighted model, where different criteria have a different weight. The system was designed specifically for the company with the consultation of McKinsey & Company. \par
+The analysis of the system of the system discovered few imperfections. Some criteria could not be used in the system and some had to be added. Also, the criteria had to be reassessed. After analyzing the new evaluation system and adjusting the system to the need of IKEA Industry in Malacky we tried the system on 15 suppliers, we included the private and state suppliers and suppliers from different countries.  \par
+Results showed that the wood-processing industry is not fully ready to fulfill the requirements for the sustainability, at least in the region of central Europe. For most of the suppliers are quantity and competitive prices the most significant factors. From the comparing of two approaches, we can say that the fact that by the year 2020, IKEA wants to have all suppliers classified as IWAY approved, moved most of the suppliers to worse positions. \par
+The classification is currently designed to be very easy to follow and to be convenient for as many divisions as possible. The fact that the output of the evaluation system is classification in 5 categories does not seem sufficient. The evaluation could also include some of the most important data such as overall performance (not in a rounded-off form), dependency or supplied volume to give a more comprehensive idea about the supplier. \par
 The system could be further improved by trying some more complex method which were mentioned in the literature review. Many of these methods can be tried online with low time demand. \par
-Further research in the field of supplier in wood-processing industry could include analysis of the suppliers approaches to environmental issues and motivation for the mining of the certified forests.
+Further research in the field of suppliers in the wood-processing industry could include analysis of the suppliers approaches to environmental issues and motivation for the mining of the certified forests.
 
 
 
 \kapitola{Conclusion}
 
 
-
 The thesis deals with the topic of suppliers evaluation. Based on the literature review, the first part of the thesis describes the purchasing process and functions. This is followed by the section concerning the suppliers and finally by the selected methods - included methods are either modern and popular or easy to use and understand. The main aim of the literature review was to understand the way of creating and compare the current evaluation system which is used in IKEA Industry in Malacky. \par
-Analysis showed that the system cannot be completely taken and applied in the enterprise in Malacky. We had to further analyze each criteria and its weight. New system does not include all criteria and criteria of MSS and Sustainability were added. The application of the new system, on selected suppliers, discovered that in the worldwide scale, supplier in the region of the CR, the SK, HU and AT do not meet the requirements, specially in the category of environmental issues and therefore many of them were classified as suppliers, which needs to be improved. \par
+Analysis showed that the system cannot be completely taken and applied in the enterprise in Malacky. We had to further analyze each criterion and its weight. The new system does not include all criteria and criteria of MSS and Sustainability were added. The application of the new system, on selected suppliers, discovered that in the worldwide scale, supplier in the region of the CR, the SK, HU and AT do not meet the requirements, especially in the category of environmental issues and therefore many of them were classified as suppliers, which needs to be improved. \par
 Supplier selection evaluation is one of the most crucial functions within any company. It should be done carefully and with the respect to the costs and other criteria, nowadays, especially to the environment. Not all suppliers are able to meet requirements of the current trends and this could have the fatal consequences on the company's name and reputation and profits.
+
+
+\kapitola{Souhrn}
+Pr\'{a}ce Syst\'{e}m hodnocen\'{i} dodavatel\r{u} v regionu \v{C}R, SK, HU a AT se zab\'{y}v\'{a} anal\'{y}zou nov\'{e}ho syst\'{e}mu hodnocen\'{i} dodavatel\r{u} v z\'{a}vod\v{e} IKEA Industry v Malack\'{a}ch. Liter\'{a}rn\'{i} re\v{s}er\v{s}e ze zab\'{y}v\'{a} popisem n\'{a}kupn\'{i} funkce a r\r{u}zn\'{y}mi metodami v\'{y}b\v{e}r\r{u} dodavatel\r{u} v\v{c}etn\v{e} v\'{y}b\v{e}ru krit\'{e}ri\'{i} a ur\v{c}en\'{i} jendotliv\'{y}ch vah. \par
+Samotn\'{a} anal\'{y}za popisuje detailn\v{e} proces v\'{y}b\v{e}ru dodavatel\r{u} pro IKEA. Jednotliv\'{a} krit\'{e}ria bylo t\v{r}eba uzp\r{u}sobit pot\v{r}eb\'{a}m z\'{a}vodu v Malack\'{a}ch. N\v{e}kter\'{a} krit\'{e}ria byla vy\v{s}krtnuta a jin\'{a} byla p\v{r}id\'{a}na (vyu\v{z}\'{i}v\'{a}n\'{i} udr\v{z}iteln\'{y}ch zdroj\r{u}, p\v{r}\'{i}stup k udr\v{z}itelnosti \v{Z}P). Do syst\'{e}mu bylo zad\'{a}no 15 r\r{u}zn\'{y}ch dodavatelů a v\'{y}sledky byly srovn\'{a}ny s minul\'{y}m syst\'{e}mem hodnocen\'{i}. V praktick\'{e} \v{c}\'{a}sti jsou d\'{a}le uvedeny dal\v{s}\'{i} poznatky a n\'{a}vrhy na \'{u}pravu klasifikace na z\'{a}klad\v{e} liter\'{a}rn\'{i} re\v{s}er\v{s}e. \par
+V\'{y}stupem pr\'{a}ce je upraven\'{y} syst\'{e}m hodnocen\'{i} dodavatel\r{u}, kter\'{y} v budoucnosti nahrad\'{i} b\'{y}val\'{y}, nevyhovuj\'{i}c\'{i}, syst\'{e}m hodnocen\'{i} dodavatel\r{u}, mezi jeho\v{z} hlavn\'{i} nedostatky pat\v{r}\'{i} vysok\'{a} m\'{i}ra subjektivity. Mezi hlavn\'{i} poznatky pr\'{a}ce pat\v{r}\'{i} skute\v{c}nost, \v{z}e sou\v{c}asn\'{i} dodavatel\'{e} nejsou zat\'{i}m schopn\'{i} dod\'{a}vat d\v{r}evn\'{i} materi\'{a}l z certifikovan\'{y}ch les\r{u} a neodpov\'{i}daj\'{i} tak mezin\'{a}rodn\'{i}m IKEA standard\r{u}m.
+
 
 
 \begin{literatura}
 
 
 %Lewis, H. (1947). Industrial purchasing, principles and practices. Chicago: Business publications..
-\citace{lewis}{Lewis, H. 1947}{\autor{Lewis, H.} \nazev{Industrial purchasing, principles and practices.}
-Chicago: Business publications, 1947}
+\citace{lewis}{Lewis, H. 1947}{\autor{Lewis, H.} (1947). \nazev{Industrial purchasing, principles and practices.}
+Chicago: Business publications}
 
 % Monczka, R. and Trent, R. (2009). Purchasing and supply chain management (4th ed.). Cincinnati, Ohio: South-Western College Pub.
-\citace{monczka}{Monczka, R. and Trent, R. 2009}{\autor{Monczka, R. and Trent, R.} \nazev{Purchasing and supply chain management (4th ed.)}
+\citace{monczka}{Monczka, R. and Trent, R. 2009}{\autor{Monczka, R. and Trent, R.} (2009). \nazev{Purchasing and supply chain management (4th ed.).}
 Cincinnati, Ohio: South-Western College Pub.}
 
 % Weele, A. (2010). Purchasing & supply chain management: Analysis, strategy, planning and practice (5th ed.). Andover: Cengage Learning
-\citace{weele}{Weele, A. (2010)}{\autor{Weele, A.} \nazev{Purchasing & supply chain management: Analysis, strategy, planning and practice (5th ed.)}
+\citace{weele}{Weele, A. (2010)}{\autor{Weele, A.} (2010). \nazev{Purchasing & supply chain management: Analysis, strategy, planning and practice (5th ed.).}
 Andover: Cengage Learning}
 % Nenadál, J. (2006). Management partnerství s dodavateli: Nové perspektivy firemního nakupování (1st ed.). Praha: Management Press.
-\citace{nenadal}{Nenad\'{a}l, J. (2006)}{\autor{Nenad\'{a}l, J.} \nazev{Management partnerství s dodavateli: Nové perspektivy firemního nakupování (1st ed.)}
+\citace{nenadal}{Nenad\'{a}l, J. (2006)}{\autor{Nenad\'{a}l, J.} (2006). \nazev{Management partnerství s dodavateli: Nové perspektivy firemního nakupování (1st ed.).}
 Praha: Management Press}
 % Ochrana, F. (2004). Hodnocení veřejných projektů a zakázek (3rd ed.). Praha: ASPI.
-\citace{ochrana}{Ochrana, F. (2004)}{\autor{Ochrana, F.} \nazev{Hodnocení veřejných projektů a zakázek (3rd ed.)}
+\citace{ochrana}{Ochrana, F. (2004)}{\autor{Ochrana, F.} (2004). \nazev{Hodnocen\'{i} ve\'{r}ejn\'{y}ch projekt\r{u} a zak\'{a}zek (3rd ed.).}
 Praha: ASPI.}
 % Saaty, T. (1980). The analytic hierarchy process: Planning, priority setting, resource allocation. New York: McGraw-Hill International Book
-\citace{saaty}{Saaty, T. (1980)}{\autor{Saaty, T.} \nazev{The analytic hierarchy process: Planning, priority setting, resource allocation}
+\citace{saaty}{Saaty, T. (1980)}{\autor{Saaty, T.} (1980). \nazev{The analytic hierarchy process: Planning, priority setting, resource allocation.}
 New York: McGraw-Hill International Book}
 % Zhu, J. (2014). Quantitative Models for Performance Evaluation and Benchmarking Data Envelopment Analysis with Spreadsheets (3rd ed.). Cham: Springer International Publishing.
-\citace{zhu}{Zhu, J. (2014)}{\autor{Zhu, J.} \nazev{Quantitative Models for Performance Evaluation and Benchmarking Data Envelopment Analysis with Spreadsheets (3rd ed.)}
+\citace{zhu}{Zhu, J. (2014)}{\autor{Zhu, J.} (2014). \nazev{Quantitative Models for Performance Evaluation and Benchmarking Data Envelopment Analysis with Spreadsheets (3rd ed.).}
 Cham: Springer International Publishing.}
 % Giunipero, L.C. and Brand, R. (1996). “Purchasing’s role in supply chain management”, International Journal of Logistics Management, Vol. 7 No. 1, pp. 29-38.
-\citace{giunipero}{Giunipero, L.C. and Brand, R. (1996)}{\autor{Giunipero, L.C. and Brand, R.} \nazev{“Purchasing’s role in supply chain management”}
+\citace{giunipero}{Giunipero, L.C. and Brand, R. (1996)}{\autor{Giunipero, L.C. and Brand, R.} (1996). \nazev{Purchasing's role in supply chain management.}
 International Journal of Logistics Management, Vol. 7 No. 1, pp. 29-38.}
 % Davis, T. (1993), “Effective supply chain management”, Sloan Management Review, Vol. 34 No. 4, pp. 35-46.
-\citace{davis}{Davis, T. (1993)}{\autor{Davis, T.} \nazev{“Effective supply chain management”}
+\citace{davis}{Davis, T. (1993)}{\autor{Davis, T.} (1993). \nazev{Effective supply chain management}
 Sloan Management Review, Vol. 34 No. 4, pp. 35-46.}
 % De Boer, L., Van der Wegen, L. and Telgen, J., (1998). “Outranking methods in support of supplier selection”, European Journal of Purchasing and Supply Management, Vol. 4 , No. 2/3, pp. 109-118.
-\citace{boer_0}{De Boer, L., Van der Wegen, L. and Telgen, J., (1998)}{\autor{De Boer, L., Van der Wegen, L. and Telgen, J.} \nazev{“Outranking methods in support of supplier selection”}
+\citace{boer_0}{De Boer, L., Van der Wegen, L. and Telgen, J., (1998)}{\autor{De Boer, L., Van der Wegen, L. and Telgen, J.} (1998). \nazev{Outranking methods in support of supplier selection.}
 European Journal of Purchasing and Supply Management, Vol. 4 , No. 2/3, pp. 109-118}
 % Verma, R. and Pullman, M. E. (1998). “An analysis of the supplier selection process” Omega, Vol. 26, No. 6, pp. 739-750.
-\citace{verma}{Verma, R. and Pullman, M. E. (1998)}{\autor{Verma, R. and Pullman, M. E.} \nazev{“An analysis of the supplier selection process”}
+\citace{verma}{Verma, R. and Pullman, M. E. (1998)}{\autor{Verma, R. and Pullman, M. E.} (1998). \nazev{An analysis of the supplier selection process.}
 Omega, Vol. 26, No. 6, pp. 739-750.}
 % Dickson, G. W. (1966). “An Analysis of Vendor Selection Systems and Decisions,” Journal of Purchasing, Vol. 2, No. 4, pp. 5–17.
-\citace{dickson}{Dickson, G. W. (1966).}{\autor{Dickson, G. W.} \nazev{“An Analysis of Vendor Selection Systems and Decisions”}
+\citace{dickson}{Dickson, G. W. (1966).}{\autor{Dickson, G. W.} (1966). \nazev{An Analysis of Vendor Selection Systems and Decisions.}
 Journal of Purchasing, Vol. 2, No. 4, pp. 5–17}
 % Weber, C. A., J. R. Current, and W. C. Benton (1991). “Vendor Selection Criteria and Methods,” European Journal of Operational Research, Vol. 50, No. 1, pp. 2–18.
-\citace{weber}{Weber, C. A., J. R. Current, and W. C. Benton (1991)}{\autor{Weber, C. A., J. R. Current, and W. C. Benton} \nazev{“Vendor Selection Criteria and Methods”}
+\citace{weber}{Weber, C. A., J. R. Current, and W. C. Benton (1991)}{\autor{Weber, C. A., J. R. Current, and W. C. Benton} (1991). \nazev{Vendor Selection Criteria and Methods.}
 European Journal of Operational Research, Vol. 50, No. 1, pp. 2–18.}
 % Lehmann, D. and O’Shaughnessy, J. (1982). “Decision criteria used in buying different categories of products”, Journal of Purchasing and Materials Management, Vol. 18 No. 1, pp. 9-14.
-\citace{lehmann}{Lehmann, D. and O'Shaughnessy, J.}{\autor{Lehmann, D. and O’Shaughnessy, J.} \nazev{“Decision criteria used in buying different categories of products”}
+\citace{lehmann}{Lehmann, D. and O'Shaughnessy, J.}{\autor{Lehmann, D. and O’Shaughnessy, J.} (1982). \nazev{Decision criteria used in buying different categories of products.}
 Journal of Purchasing and Materials Management, Vol. 18 No. 1, pp. 9-14}
 % Vokurka, R. J., Choobineh, J. and Vadi L., (1996). "A prototype expert system for the evaluation and selection of potential suppliers", International Journal of Operations & Production Management, Vol. 16, No. 12, pp. 106 - 127.
-\citace{vokurka}{Vokurka, R. J., Choobineh, J. and Vadi L., (1996)}{\autor{Vokurka, R. J., Choobineh, J. and Vadi L.} \nazev{"A prototype expert system for the evaluation and selection of potential suppliers"}
+\citace{vokurka}{Vokurka, R. J., Choobineh, J. and Vadi L., (1996)}{\autor{Vokurka, R. J., Choobineh, J. and Vadi L.} (1996). \nazev{A prototype expert system for the evaluation and selection of potential suppliers.}
 International Journal of Operations & Production Management, Vol. 16, No. 12, pp. 106 - 127}
 % Barbarosoglu, G. and Yazgac, T. (1997). “An application of the analytic hierarchy process to the supplier selection problem”, Production and inventory management journal, Vol. 38,  No 1, pp. 14-21.
-\citace{barbarosoglu}{Barbarosoglu, G. and Yazgac, T. (1997)}{\autor{Barbarosoglu, G. and Yazgac, T.} \nazev{“An application of the analytic hierarchy process to the supplier selection problem”}
+\citace{barbarosoglu}{Barbarosoglu, G. and Yazgac, T. (1997)}{\autor{Barbarosoglu, G. and Yazgac, T.} (1997). \nazev{An application of the analytic hierarchy process to the supplier selection problem.}
 Production and inventory management journal, Vol. 38,  No 1, pp. 14-21}
 % Altinoz, C., Kilduff, P. and Winchester Jr., (2010). “Current issues and methods in supplier selection”, Journal of the Textile Institute, Vol. 92, No. 2, pp. 128-141.
-\citace{altinoz}{Altinoz, C., Kilduff, P. and Winchester Jr., (2010)}{\autor{Altinoz, C., Kilduff, P. and Winchester Jr.} \nazev{“Current issues and methods in supplier selection”}
+\citace{altinoz}{Altinoz, C., Kilduff, P. and Winchester Jr., (2010)}{\autor{Altinoz, C., Kilduff, P. and Winchester Jr.} (2010). \nazev{Current issues and methods in supplier selection.}
 Journal of the Textile Institute, Vol. 92, No. 2, pp. 128-141}
 % De Boer, L., Labro, E., Molrlacchi, P., (2001). A review of methods supporting supplier selection. European Journal of Purchasing and Supply Management, Vol. 1, No. 7., pp. 75–89
-\citace{boer_1}{De Boer, L., Labro, E., Molrlacchi, P., (2001)}{\autor{De Boer, L., Labro, E., Molrlacchi, P.} \nazev{A review of methods supporting supplier selection}
+\citace{boer_1}{De Boer, L., Labro, E., Molrlacchi, P., (2001)}{\autor{De Boer, L., Labro, E., Molrlacchi, P.} (2001). \nazev{A review of methods supporting supplier selection.}
 European Journal of Purchasing and Supply Management, Vol. 1, No. 7., pp. 75–89}
 % Pal O., Gupta A. K., Garg  R. K., (2013). “Supplier Selection Criteria and Methods in SupplyChains: A Review”,International Journal of Social, Education, Economics and Management Engineering, Vol. 7, No. 10, pp. 1396 - 1401
-\citace{pal}{Pal O., Gupta A. K., Garg  R. K., (2013)}{\autor{Pal O., Gupta A. K., Garg  R. K.} \nazev{“Supplier Selection Criteria and Methods in SupplyChains: A Review”}
+\citace{pal}{Pal O., Gupta A. K., Garg  R. K., (2013)}{\autor{Pal O., Gupta A. K., Garg  R. K.} (2013). \nazev{Supplier Selection Criteria and Methods in SupplyChains: A Review.}
 International Journal of Social, Education, Economics and Management Engineering, Vol. 7, No. 10, pp. 1396 - 1401}
 % Timmerman, E. (1986). “An Approach to Vendor Performance Evaluation,” Journal of Purchasing and Materials Management, Vol. 22, No. 4, pp. 2–8.
-\citace{}{Timmerman, E. (1986)}{\autor{Timmerman, E.} \nazev{“An Approach to Vendor Performance Evaluation”}
+\citace{}{Timmerman, E. (1986)}{\autor{Timmerman, E.} (1986). \nazev{An Approach to Vendor Performance Evaluation.}
 Journal of Purchasing and Materials Management, Vol. 22, No. 4, pp. 2–8}
 % Ding, H. W., L. Benyoucef and X. L. Xie (2005), “A Simulation Optimization Methodology for Supplier Selection Problem”, International Journal of Computer Integrated Manufacturing, Vol. 18, No. 2-3, pp. 210–224
-\citace{ding}{Ding, H. W., L. Benyoucef and X. L. Xie (2005)}{\autor{Ding, H. W., L. Benyoucef and X. L. Xie} \nazev{“A Simulation Optimization Methodology for Supplier Selection Problem”}
+\citace{ding}{Ding, H. W., L. Benyoucef and X. L. Xie (2005)}{\autor{Ding, H. W., L. Benyoucef and X. L. Xie} (2005). \nazev{A Simulation Optimization Methodology for Supplier Selection Problem.}
 International Journal of Computer Integrated Manufacturing, Vol. 18, No. 2-3, pp. 210–224}
 % Min, H. (1994). “International Supplier Selection: a Multi-attribute Utility Approach”, International Journal of Physical Distribution and Logistics Management, Vol. 5, No. 24, pp. 24–33
-\citace{}{Min, H. (1994)}{\autor{Min, H.} \nazev{“International Supplier Selection: a Multi-attribute Utility Approach”}
+\citace{}{Min, H. (1994)}{\autor{Min, H.} (1994). \nazev{International Supplier Selection: a Multi-attribute Utility Approach.}
 International Journal of Physical Distribution and Logistics Management, Vol. 5, No. 24, pp. 24–33}
 % Mendoza, A. (2007). “Effective methodologies for supplier selection and order quantity allocation” (Unpublished doctoral dissertation), The Pennsylvania State University The Graduate School, Pennsylvania, USA
-\citace{}{Mendoza, A. (2007)}{\autor{Mendoza, A.} \nazev{“Effective methodologies for supplier selection and order quantity allocation”}
+\citace{}{Mendoza, A. (2007)}{\autor{Mendoza, A.} (2007). \nazev{Effective methodologies for supplier selection and order quantity allocation.}
 (Unpublished doctoral dissertation), The Pennsylvania State University The Graduate School, Pennsylvania, USA}
 % Menšíková, M.(2009). “Návrh systému hodnocení dodavatelů dle ČSN ISO 9001:2000” (Unpublished doctoral dissertation), Vysoké učení technické v Brně, Fakulta podnikatelská, Brno, Czech republic
-\citace{}{Menšíková, M.(2009)}{\autor{Menšíková, M.} \nazev{“Návrh systému hodnocení dodavatelů dle ČSN ISO 9001:2000”}
-(Unpublished doctoral dissertation), Vysoké učení technické v Brně, Fakulta podnikatelská, Brno, Czech republic}
+\citace{}{Men\v{s}\'{i}kov\'{a}, M.(2009)}{\autor{Men\v{s}\'{i}kov\'{a}, M.} (2009). \nazev{N\'{a}vrh syst\'{e}mu hodnocen\'{i} dodavatel\r{u} dle \v{C}SN ISO 9001:2000.}
+(Unpublished doctoral dissertation), Vysok\'{e} u\v{c}en\'{i} technick\'{e} v Brn\v{e}, Fakulta podnikatelsk\'{a}, Brno, Czech republic}
 
 
 \end{literatura}
+
+\kapitola{List of figures}
+
+Fig. 1: Purchasing process activites (van Weele, 2010)\\
+Fig. 2: Impact of developments on the complexity of initial purchasing decisions (de
+Boer, 1998)\\
+Fig. 3: Suggested division of the methods (Mendoza, 2007)\\
+Fig. 4: IKEA business model (IKEA, 2015)\\
+Fig. 5: IKEA dependency matrix (IKEA, 2015)
+
+\kapitola{List of tables}
+
+Tab. 1  Dickson's (1966) supplier or vendor selection criteria compared with today's situation by Weber et al. (2001) \\
+Tab. 2 Criteria and their category goals and wished positions (IKEA directives)\\
+Tab. 3 IKEA Clasification of the suppliers (IKEA directives)\\
+Tab. 4  AHP weight distribution (Own sourcing)\\
+Tab. 5  Material categories (Own sourcing)\\
+Tab. 6 Comparison of the old and new results of supplier's evaluation (Own sourcing)
+
+
+\kapitola{List of appendix}
+
+Appendix 1: Framework for evaluating product development/innovation capability \\
+￼￼￼￼￼￼￼￼￼￼￼￼￼￼Appendix 2: Evaluation according to the old system\\
+￼￼￼￼￼￼￼￼￼￼￼￼￼￼Appendix 3: Evaluation according to the new system\\
+
+
 
 \end{document}
 
@@ -1175,7 +1259,7 @@ International Journal of Physical Distribution and Logistics Management, Vol. 5,
 %%%%%%%%%%%%%%%%%%%%%% Plovoucí prostředí
 
 \def\figurename{Obr.}
-\def\tablename{Tab.}
+\def\tablename{Tabular}
 
 \def\csfigcap#1{\refstepcounter{figure}\parbox{\textwidth}{\small%
        \figurename{} \thefigure: #1}\addcontentsline{lof}{section}{\figurename{}
